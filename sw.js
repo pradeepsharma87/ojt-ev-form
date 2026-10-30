@@ -1,5 +1,5 @@
-// Samagra Shiksha OJT/EV form – offline cache. Bump VERSION whenever index.html changes.
-var VERSION = 'ss-ojt-v1.4.0';
+// VE OJT/EV pre-information form – offline cache. Bump VERSION whenever index.html changes.
+var VERSION = 've-ojt-v2.3.0';
 var SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
